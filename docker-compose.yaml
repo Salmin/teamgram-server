@@ -2,12 +2,6 @@ services:
   teamgram:
     build: .
     restart: always
-    deploy:
-      resources:
-        limits:
-          memory: 4G
-        reservations:
-          memory: 2G
     ports:
       - "10443:10443"
       - "11443:11443"
